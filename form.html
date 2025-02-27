@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form Example</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="/submit-form" method="post">
+        <!-- Name Field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your full name"><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com"><br><br>
+
+        <!-- Message Field -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Your message here..." rows="5" cols="30"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
