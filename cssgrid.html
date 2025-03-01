@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Image Gallery</h1>
+        <div class="gallery">
+            <img src="C:\Users\Varshitha N\OneDrive\Pictures\pixelcut-export (9).jpeg" alt="Image 1">
+            <img src="C:\Users\Varshitha N\OneDrive\Pictures\Screenshot 2024-04-14 161907.png" alt="Image 2">
+            <img src="C:\Users\Varshitha N\OneDrive\Pictures\Screenshot 2024-04-14 165849.png" alt="Image 3">
+            <img src="C:\Users\Varshitha N\OneDrive\Pictures\Screenshot 2024-04-15 143654.png" alt="Image 4">
+            <img src="C:\Users\Varshitha N\OneDrive\Pictures\WhatsApp Image 2024-04-26 at 3.50.47 PM (1).jpeg" alt="Image 5">
+            <img src="C:\Users\Varshitha N\OneDrive\Pictures\WhatsApp Image 2024-04-26 at 3.50.49 PM (1).jpeg" alt="Image 6">
+        </div>
+    </div>
+</body>
+</html>
