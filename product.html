@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul.product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        li.product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li.product-item img {
+            max-width: 150px;
+            margin-right: 15px;
+        }
+        li.product-item .details {
+            flex: 1;
+        }
+        li.product-item .details h2 {
+            margin: 0 0 10px;
+        }
+        li.product-item .details p {
+            margin: 5px 0;
+        }
+        li.product-item .details .price {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Listing</h1>
+        <ul class="product-list">
+            <li class="product-item">
+                <img src="C:\Users\Varshitha N\OneDrive\Pictures\Screenshot 2024-04-20 172624.png" alt="Product 1">
+                <div class="details">
+                    <h2>Product 1</h2>
+                    <p>Description of Product 1.</p>
+                    <p class="price">Rs.19.99</p>
+                </div>
+            </li>
+            <li class="product-item">
+                <img src="C:\Users\Varshitha N\OneDrive\Pictures\Screenshot 2024-04-20 172749.png" alt="Product 2">
+                <div class="details">
+                    <h2>Product 2</h2>
+                    <p>Description of Product 2.</p>
+                    <p class="price">Rs.29.99</p>
+                </div>
+            </li>
+            <li class="product-item">
+                <img src="C:\Users\Varshitha N\OneDrive\Pictures\Screenshot 2024-04-20 172515.png" alt="Product 3">
+                <div class="details">
+                    <h2>Product 3</h2>
+                    <p>Description of Product 3.</p>
+                    <p class="price">Rs.39.99</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
